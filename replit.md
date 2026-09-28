@@ -1,6 +1,6 @@
-# [Project name]
+# Lockkedn
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Lockkedn turns product links into shoppable short-form content concepts, publishing plans, and feedback loops for creator-led commerce teams.
 
 ## Run & Operate
 
@@ -22,23 +22,30 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/lockkedn/src/App.tsx` — product surface, local state, routing, and interactive flows
+- `artifacts/lockkedn/src/index.css` — Lockkedn visual tokens, typography, layout utilities, and motion
+- `artifacts/lockkedn/.replit-artifact/artifact.toml` — artifact routing and managed web workflow
+- `attached_assets/Lockkedn_SaaS_Blueprint_1790606502001.pdf` — original product blueprint
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The first build is frontend-first and uses browser local storage so the core workflow can be explored without connecting social or commerce accounts.
+- The product surface is organized around the product-to-content loop: intake, concept generation, queue progression, scheduling, and analytics feedback.
+- The nine AI agents in the blueprint are represented as user-facing workflow capabilities first; they are not split into separate services until real provider and account integrations are defined.
+- The responsive shell keeps the command center dense on desktop and switches to a focused bottom navigation on smaller screens.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Users can add product links, review a small product library, generate content concepts for TikTok, Instagram, or YouTube, move ideas through queue states, schedule them on a publishing calendar, inspect performance signals, and manage connected-account, brand-kit, and AI preferences views.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+None recorded.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- The current MVP persists data in the browser under `lockkedn-state`; it is intentionally not multi-user or server-backed yet.
+- Artifact typecheck is the reliable local verification command; the root workspace build also includes unrelated scaffold packages that require their own workflow environment.
 
 ## Pointers
 

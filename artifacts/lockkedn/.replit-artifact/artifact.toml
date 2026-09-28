@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Lockkedn"
+description = "A responsive AI content operations dashboard for turning product links into shoppable short-form video content, with research, scripting, scheduling, publishing, and analytics feedback in one workspace."
+version = "1.0.0"
+id = "artifacts/lockkedn"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19745
+
+[services.development]
+run = "pnpm --filter @workspace/lockkedn run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lockkedn", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/lockkedn/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19745"
+BASE_PATH = "/"
