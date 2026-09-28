@@ -1,0 +1,66 @@
+[
+  {
+    "id": "f0d8c9a7-0b40-4f04-8a1c-1b8e6b2f7c01",
+    "position": 1,
+    "filepath": "src/pages/slides/Title.tsx",
+    "title": "Lockkedn",
+    "description": "Turn one product link into the next thing to post.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f0d8c9a7-0b40-4f04-8a1c-1b8e6b2f7c02",
+    "position": 2,
+    "filepath": "src/pages/slides/FragmentedLoop.tsx",
+    "title": "The creator commerce loop is fragmented",
+    "description": "The disconnected workflow Lockkedn is built to unify.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f0d8c9a7-0b40-4f04-8a1c-1b8e6b2f7c03",
+    "position": 3,
+    "filepath": "src/pages/slides/ConnectedLoop.tsx",
+    "title": "One link. One connected creative loop.",
+    "description": "The end-to-end Lockkedn workflow.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f0d8c9a7-0b40-4f04-8a1c-1b8e6b2f7c04",
+    "position": 4,
+    "filepath": "src/pages/slides/Agents.tsx",
+    "title": "Nine focused AI agents, one operating system",
+    "description": "The specialized agent system behind the workflow.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f0d8c9a7-0b40-4f04-8a1c-1b8e6b2f7c05",
+    "position": 5,
+    "filepath": "src/pages/slides/Mvp.tsx",
+    "title": "The MVP makes the loop tangible",
+    "description": "The responsive product surface built from the blueprint.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f0d8c9a7-0b40-4f04-8a1c-1b8e6b2f7c06",
+    "position": 6,
+    "filepath": "src/pages/slides/Workflow.tsx",
+    "title": "From product link to publish-ready idea",
+    "description": "The user journey through the MVP.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f0d8c9a7-0b40-4f04-8a1c-1b8e6b2f7c07",
+    "position": 7,
+    "filepath": "src/pages/slides/LearningLoop.tsx",
+    "title": "The product is designed to learn with the team",
+    "description": "How performance becomes practical creative guidance.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f0d8c9a7-0b40-4f04-8a1c-1b8e6b2f7c08",
+    "position": 8,
+    "filepath": "src/pages/slides/Next.tsx",
+    "title": "What comes next",
+    "description": "The next integration layer for Lockkedn.",
+    "speakerNotes": ""
+  }
+]

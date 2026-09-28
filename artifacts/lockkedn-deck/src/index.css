@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-primary: var(--slide-primary);
+  --color-accent: var(--slide-accent);
+  --color-bg: var(--slide-bg);
+  --color-text: var(--slide-text);
+  --color-muted: var(--slide-muted);
+  --font-display: var(--font-display-family);
+  --font-body: var(--font-body-family);
+}
+
+:root {
+  --slide-primary: #f7cb4d;
+  --slide-accent: #3e8a78;
+  --slide-bg: #f6f3ed;
+  --slide-text: #202437;
+  --slide-muted: #667078;
+  --font-display-family: 'Syne', sans-serif;
+  --font-body-family: 'DM Sans', sans-serif;
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--slide-bg);
+  color: var(--slide-text);
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide-viewer {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.paper-grid {
+  background-image:
+    linear-gradient(rgba(32, 36, 55, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(32, 36, 55, 0.045) 1px, transparent 1px);
+  background-size: 3vw 3vw;
+}
+
+.soft-shadow {
+  box-shadow: 0 1.2vw 3vw rgba(32, 36, 55, 0.08);
+}
+
+.small-caps {
+  font-family: var(--font-body-family);
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}

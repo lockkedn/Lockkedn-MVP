@@ -1,0 +1,28 @@
+kind = "slides"
+previewPath = "/lockkedn-deck/"
+title = "Lockkedn — Product Overview"
+description = "An eight-slide product overview of Lockkedn, the AI content operations workspace that turns product links into shoppable short-form video ideas, publishing plans, and performance feedback loops."
+version = "1.0.0"
+id = "artifacts/lockkedn-deck"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/lockkedn-deck/" ]
+localPort = 19300
+
+[services.development]
+run = "pnpm --filter @workspace/lockkedn-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lockkedn-deck", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/lockkedn-deck/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19300"
+BASE_PATH = "/lockkedn-deck/"
